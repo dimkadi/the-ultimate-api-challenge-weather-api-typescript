@@ -1,4 +1,4 @@
-import { optionType } from './../types/index'
+import { optionType } from '../types/index'
 
 type componentProps = {
   options: []
@@ -6,7 +6,7 @@ type componentProps = {
 }
 
 const Suggestions = ({ options, onSelect }: componentProps): JSX.Element => (
-  <ul className="absolute top-9 bg-white ml-1 rounded-b-md">
+  <ul className="absolute top-9 bg-blue ml-1 rounded-b-md">
     {options.map((option: optionType, index: number) => (
       <li key={option.name + '-' + index}>
         <button

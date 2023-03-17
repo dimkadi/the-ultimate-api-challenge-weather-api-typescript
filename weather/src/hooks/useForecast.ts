@@ -1,6 +1,6 @@
 import { useState, useEffect, ChangeEvent } from 'react'
 
-import { optionType, forecastType } from './../types/index'
+import { optionType, forecastType } from '../types/index'
 
 const BASE_URL = 'http://api.openweathermap.org'
 
@@ -37,6 +37,7 @@ const useForecast = () => {
           ...data.city,
           list: data.list.slice(0, 16),
         }
+        console.log(forecastData)
 
         setForecast(forecastData)
       })

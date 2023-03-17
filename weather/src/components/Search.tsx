@@ -3,7 +3,7 @@ import { ChangeEvent } from 'react'
 import Header from './Header'
 import Suggestions from './Suggestions'
 
-import { optionType } from './../types/index'
+import { optionType } from '../types/index'
 
 type Props = {
   term: string

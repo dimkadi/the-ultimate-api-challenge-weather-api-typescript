@@ -9,7 +9,7 @@ import {
   getVisibilityValue,
   getSunTime,
   getPop,
-} from './../helpers'
+} from '../helpers'
 
 import { forecastType } from '../types'
 
@@ -71,9 +71,7 @@ const Forecast = ({ data }: Props) => {
             icon="wind"
             title="Wind"
             info={`${Math.round(today.wind.speed)} km/h`}
-            description={`${getWindDirection(
-              Math.round(today.wind.deg)
-            )}, gusts 
+            description={`${getWindDirection(Math.round(today.wind.deg))}, gusts
             ${today.wind.gust.toFixed(1)} km/h`}
           />
           <Tile
